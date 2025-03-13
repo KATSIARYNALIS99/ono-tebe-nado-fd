@@ -154,7 +154,6 @@
   position: absolute;
   left: 40px;
   font-size: 40px;
-  line-height: 47px;
   text-transform: uppercase;
   line-height: normal;
   color: #000000;
@@ -229,7 +228,6 @@
 
 .more {
   position: absolute;
-  width: 192px;
   height: 25px;
   left: 40px;
   bottom: -2px;
@@ -267,14 +265,12 @@
 }
 
 .about__title {
-  padding-top: 137px;
+  padding-top: 138px;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 46px;
   text-transform: uppercase;
   color: #000000;
   position: absolute;
-  width: 693px;
-  height: 312px;
 }
 
 .about__text {
@@ -294,17 +290,17 @@
 }
 
 .footer-footer {
-    margin-top: 1787px;
+    margin-top: 1799px;
 }
 
 .footer-address {
-  max-width: 240px;
+  max-width: 242px;
   font-size: 18px;
   font-style: normal;
-  line-height: 24px;
+  line-height: 25px;
 }
 
-.footer-address-no-decor{
+.footer-address-no-decor {
     text-decoration: none;
     display: block;
 }
@@ -316,9 +312,7 @@
 
 .footer__menu-link {
   color: #000;
-  text-decoration: none;
   font-size: 18px;
-  text-decoration: underline;
 }
 
 .footer__menu-link_active {
