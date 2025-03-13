@@ -1,1 +1,339 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 0px 50px 0px 50px;
+  height: 293px;
+  scroll-behavior: smooth;
+}
+
+.header-menu {
+  line-height: 22px;
+  justify-self: start;
+  align-items: center;
+}
+
+.header-menu-list {
+  display: flex;
+  height: 100%;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.header-menu-list-item {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.header__links-list {
+  text-underline-offset: 4px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header__link {
+  font-size: 18px;
+  list-style-type: circle;
+}
+
+.header-logo {
+  display: block;
+  width: 136px;
+  height: 108px;
+}
+
+.address {
+  justify-self: end;
+  max-width: 239px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px;
+}
+
+.header-address-no-decor {
+  text-decoration: none;
+  display: block;
+}
+
+.cover {
+  position: relative;
+  background: url(https://s3-alpha-sig.figma.com/img/0ebc/4c3a/92bfb672f477e421e7738fd6416ff19b?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fd7ia-0tBErGQ3B8EGneyXvTcgpulT9lWcsB83XT1GQK3-zm0cG7x64vcVqmJDyXS23SGJUjAz3HWQ-QaW192KITos9kJQf1ujiQOko9zApy0Q33cLaivu1l1dP3dNSYBqj3AXhl6u9B2A53KEH0kTYNg9KA-bFd-z3e0Yq36DUBIwcW7V1w0JNXVz-KWwL7~R4bmaHaVWim6RTYlVeTQ~yusInDs0bSY86TEMlBX7GQ2th70AeasROFandznHvE45RQ9bfFe-yZBViQLRLUK-Iv3TjJvqAeaEw8R1GX8DjZ1JGIXN2eAVLqQAT2aLj2xvBCBTFNCqz4~Y8iKbB1Jw__);
+  background-size: cover;
+  padding: 165px 50px 50px 50px;
+  background-position: center;
+  width: 1100px;
+  height: 757px;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.cover-title {
+  position: relative;
+  color: #ffffff;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 114.99999999999999%;
+  padding-bottom: 376px;
+}
+
+.cover-title-tebe {
+  position: absolute;
+  width: 339px;
+  height: 115px;
+  left: calc(50% - 339px / 2);
+  top: 300px;
+  font-size: 100px;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.cover-title-nado {
+  position: absolute;
+  width: 387px;
+  height: 115px;
+  left: 663px;
+  top: 435px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  text-align: right;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.description {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+  height: 51px;
+}
+
+.cover_description {
+  word-spacing: 18.5px;
+}
+
+.cover-button {
+  border: 1px solid #ffffff;
+  padding: 12px 32px 11px 31px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.lots {
+  padding: 0 24px 0 24px;
+}
+
+.conteiner {
+    position: absolute;
+    width: 1052px;
+    height: 723px;
+    top: 1230px;
+ }
+  
+
+.lots__heading {
+  position: absolute;
+  left: 40px;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  line-height: normal;
+  color: #000000;
+}
+
+.lots_card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lots__card-list-item {
+  list-style: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_type_film {
+  background: url(/images/card-lot-01.jpg);
+  position: absolute;
+  width: 334px;
+  height: 596px;
+  top: 74px;
+  z-index: -2;
+}
+
+.card__title {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 48px;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.card__text {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 48px;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.card_type_book {
+  background: url(/images/card-lot-02.jpg);
+  position: absolute;
+  width: 334px;
+  height: 596px;
+  left: 359px;
+  top: 74px;
+  z-index: -2;
+}
+
+.card_type_picture {
+  background: url(/images/card-lot-03.jpg);
+  position: absolute;
+  width: 334px;
+  height: 596px;
+  left: 718px;
+  top: 74px;
+  z-index: -2;
+}
+
+.more {
+  position: absolute;
+  width: 192px;
+  height: 25px;
+  left: 40px;
+  bottom: -2px;
+  font-size: 20px;
+}
+
+.about {
+  margin: 0px 24px 180px 24px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+  align-items: center;
+  position: absolute;
+  width: 1052px;
+  top: 2073px;
+}
+
+.about_column {
+  padding: 35px 765px 320px 47px;
+}
+
+.image {
+  width: 149px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: #000;
+  margin: 0 auto;
+}
+
+.about__title {
+  padding-top: 137px;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #000000;
+  position: absolute;
+  width: 693px;
+  height: 312px;
+}
+
+.about__text {
+  padding-top: 283px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 50px 90px;
+  align-items: start;
+}
+
+.footer-footer {
+    margin-top: 1787px;
+}
+
+.footer-address {
+  max-width: 240px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.footer-address-no-decor{
+    text-decoration: none;
+    display: block;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__menu-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  justify-content: end;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
