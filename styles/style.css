@@ -37,7 +37,7 @@
 
 }
 
-.link_active{
+.link_active {
  text-decoration: none;
 }
 
@@ -48,13 +48,13 @@
 }
 
 .address {
-  max-width: 239px;
+  max-width: 242px;
   font-size: 18px;
   font-style: normal;
   line-height: 25px;
 }
 
-.header_end{
+.header_end {
   justify-self: end;
 }
 
@@ -142,9 +142,9 @@
 
 .lots-lots { 
  position: absolute;
-width: 1100px;
-min-height: 723px;
-top: 1230px;
+ width: 1100px;
+ min-height: 723px;
+ top: 1230px;
 }
 
 .lots__heading {
@@ -233,7 +233,7 @@ top: 1230px;
   align-items: center;
   position: absolute;
   width: 1052px;
-  top: 2073px;
+  top: 2072px;
   margin: 0px 24px 180px 24px;
 }
 
