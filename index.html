@@ -11,49 +11,52 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu-list-item header__links-list">
-            <a class="header__link link_active" href="#home">главная</a>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__link_active">
+            <a
+              class="header__link header__links-list-item_no-bullit"
+              href="#home">главная</a>
           </li>
-          <li class="header-menu-list-item">
+          <li class="header__links-list-item">
             <a class="header__link" href="#two">посмотреть лоты</a>
           </li>
-          <li class="header-menu-list-item">
-            <a class="header__link" href="#abo">об аукционе</a>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <a class="header-logo">
-        <img src="images/logo-black.svg" alt="Логотип" />
+      <a class="header__logo">
+        <img src="./images/logo-black.svg" alt="Логотип" />
       </a>
-      <address class="address header_end">
+      <address class="address address__plase">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <span class="header-address-no-decor"
-          >наб. Принсенграхт 263- 265, Амстердам</span
-        >
+          >наб. Принсенграхт 263- 265, Амстердам</span>
       </address>
     </header>
     <main>
       <section class="cover" id="home">
         <div class="overlay"></div>
-        <h1 class="cover-title">
+        <h1 class="cover__title">
           <span>оно</span>
-          <span class="cover-title__part_two cover-title-tebe">тебе</span>
-          <span class="cover-title__part_two cover-title-nado">надо</span>
+          <span class="aligned-text aligned-text_center">тебе</span>
+          <span class="aligned-text aligned-text_right">надо</span>
         </h1>
 
-        <div class="description cover_description">
+        <div class="cover__description-text cover__description">
           <p>аукцион вещей, в которые никто не верил</p>
-          <button class="description cover-button">сделать ставку</button>
+          <button class="cover__description-text bet-button">
+            сделать ставку
+          </button>
         </div>
       </section>
       <section class="lots lots-lots" id="two">
         <h2 class="lots__heading">Лоты</h2>
-        <ul class="lots_card-list">
+        <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <article class="card card_menu card_type_film">
+            <article class="card card_type card_type_film">
               <div class="overlay"></div>
               <h3 class="card__title">
                 Фильм режиссёра, который бросил киношколу
@@ -66,7 +69,7 @@
           </li>
 
           <li class="lots__card-list-item">
-            <article class="card card_menu card_type_book">
+            <article class="card card_type card_type_book">
               <div class="overlay"></div>
               <h3 class="card__title">
                 Книга, где описан один скучный день из жизни рекламного агента
@@ -83,7 +86,7 @@
           </li>
 
           <li class="lots__card-list-item">
-            <article class="card card_menu card_type_picture">
+            <article class="card card_type card_type_picture">
               <div class="overlay"></div>
               <h3 class="card__title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
@@ -97,12 +100,15 @@
             </article>
           </li>
         </ul>
-        <a href="#0" class="more">посмотреть больше</a>
+        <a href="#0" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about" id="about">
-        <div class="about_column">
+        <div class="about__column">
           <div class="about__logo">
-            <img src="../images/logo-white.svg" alt="Логотип" class="image" />
+            <img
+              src="./images/logo-white.svg"
+              alt="Логотип"
+              class="about__logo-image"/>
           </div>
         </div>
         <article>
@@ -128,45 +134,50 @@
         </article>
       </section>
     </main>
-    <footer class="footer footer-footer">
+    <footer class="footer">
       <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <span class="footer-address-no-decor"
-          >наб. Принсенграхт 263- 265, Амстердам</span
-        >
+          >наб. Принсенграхт 263- 265, Амстердам</span>
       </address>
       <nav>
-        <ul class="footer__menu-list">
+        <ul class="footer__menu">
           <li>
-            <a
-              class="footer__menu-link footer__menu-link_active link_active"
-              href="#home"
-              >главная</a
-            >
+            <a class="footer__menu-list footer__menu-link_active" href="#home"
+              >главная</a>
           </li>
           <li>
-            <a href="#two" class="footer__menu-link">посмотреть лоты</a>
+            <a href="#two" class="footer__menu-list">посмотреть лоты</a>
           </li>
           <li>
-            <a href="#about" class="footer__menu-link">об аукционе</a>
+            <a href="#about" class="footer__menu-list">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <ul class="footer__social-list">
+      <ul class="footer__social-link">
         <li>
-          <a href="#" class="footer__social-link">
-            <img src="/images/yt.svg" alt="Yotybe" />
+          <a
+            href="https://www.yotybe.com"
+            target="_blank"
+            class="footer__social-list">
+            <img src="./images/yt.svg" alt="Yotybe" />
           </a>
         </li>
         <li>
-          <a href="#" class="footer__social-link">
-            <img src="/images/vk.svg" alt="vk" />
+          <a
+            href="https://www.vk.ru"
+            target="_blank"
+            class="footer__social-list">
+            <img src="./images/vk.svg" alt="vk" />
           </a>
         </li>
         <li>
-          <a href="#" class="footer__social-link">
-            <img src="/images/pinterest.svg" alt="pinterest" />
+          <a
+            href="https://www.pinterest.com"
+            target="_blank"
+            class="footer__social-list">
+            <img src="./images/pinterest.svg" alt="pinterest" />
           </a>
         </li>
       </ul>
