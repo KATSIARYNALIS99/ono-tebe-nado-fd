@@ -3,7 +3,8 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 0px 50px 0px 50px;
-  min-height: 293px;
+  padding-top: 91px;
+  padding-bottom: 94px;
   scroll-behavior: smooth;
 }
 
@@ -26,19 +27,13 @@
   text-underline-offset: 4px;
 }
 
-.header__link_active {
-  text-underline-offset: 4px;
-  text-decoration: none;
-  list-style: none;
-}
-
 .header__link {
   font-size: 18px;
-
+  text-decoration: none;
 }
 
-.header__links-list-item_no-bullit {
-  text-decoration: none;
+.header__links_no-bullit {
+  list-style: none;
 }
 
 .header__logo {
@@ -56,11 +51,6 @@
 
 .address__plase {
   justify-self: end;
-}
-
-.header-address-no-decor {
-  text-decoration: none;
-  display: block;
 }
 
 .cover {
@@ -109,7 +99,7 @@
 .aligned-text_right {
   display: block;
   text-align: right;
-  padding-left: 6.15em;
+  margin-right: -0.3em;
 }
 
 .cover__description-text {
@@ -143,7 +133,6 @@
 .lots-lots {
   font-size: 40px;
   width: 1100px;
-  min-height: 723px;
 }
 
 .lots__heading {
@@ -174,11 +163,12 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 596px;
+  background-position:center;
+  background-size: cover;
 }
 
 .card_type {
   width: 334px;
-  min-height: 596px;
   z-index: 0;
 }
 
@@ -270,11 +260,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0 50px 79px;
   align-items: start;
-}
-
-.footer-address-no-decor {
-  text-decoration: none;
-  display: block;
 }
 
 .footer__menu {
