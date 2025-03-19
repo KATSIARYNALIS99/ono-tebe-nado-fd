@@ -23,17 +23,20 @@
 
 .header__links-list-item {
   list-style-type: circle;
-  text-decoration: underline;
   text-underline-offset: 4px;
+  font-size: 18px;
 }
 
 .header__link {
-  font-size: 18px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .header__links_no-bullit {
   list-style: none;
+}
+
+.header__link-active {
+  text-decoration: none;
 }
 
 .header__logo {
@@ -46,7 +49,7 @@
   max-width: 242px;
   font-size: 18px;
   font-style: normal;
-  line-height: 25px;
+  line-height: 24px;
 }
 
 .address__plase {
